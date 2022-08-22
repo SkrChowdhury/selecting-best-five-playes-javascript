@@ -1,0 +1,29 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@500&display=swap');
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: #02101e;
+}
+
+#banner-heading {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#selected-players {
+    list-style-type: decimal;
+    
+}
+ol li {
+    margin-left: 2em;
+    padding: 5px;
+    text-align: justify;
+    font-size: 1.5em;
+    color: gainsboro;
+}
+/* input field styles  */
+
+#per-player-expense , #manager-salary, #coach-salary {
+    color: aliceblue;
+
+}
