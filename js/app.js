@@ -1,18 +1,17 @@
 /* -------------------------------------------------
               Common Javascript Functions
   ------------------------------------------------- */
+
+
+  // Get Value from Input Fields 
 function getInputFieldValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
   const inputFieldValueString = inputField.value;
   const inputFieldValue = parseFloat(inputFieldValueString);
-
-  if (inputFieldValue === "" || inputFieldValue != 'number') {
-    alert('Please Insert a Number');
-    return 0;
-  }
   return inputFieldValue;
 }
 
+// Get Value from Text Fields 
 function getTextElementValueById(elementId) {
   const textElement = document.getElementById(elementId);
   const textElementValueString = textElement.innerText;
@@ -20,6 +19,7 @@ function getTextElementValueById(elementId) {
   return textElementValue;
 }
 
+// Set Value to Text Fields 
 function setTextElementValueById(elementId, newValue) {
   const textElement = document.getElementById(elementId);
   textElement.innerText = newValue;
