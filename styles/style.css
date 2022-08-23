@@ -1,6 +1,8 @@
 /* Google Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@500&display=swap');
 
+
+/* Common Styles  */
 body{
     font-family: 'Manrope', sans-serif;
     background-color: #02101e;
@@ -10,6 +12,7 @@ body{
     font-family: 'Berkshire Swash', cursive;
 }
 
+/* Selected five list styles / */
 #selected-players {
     list-style-type: decimal;
     
