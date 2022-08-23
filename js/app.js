@@ -2,16 +2,20 @@
               Common Javascript Functions
   ------------------------------------------------- */
 
-
-  // Get Value from Input Fields 
+// Get Value from Input Fields
 function getInputFieldValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
   const inputFieldValueString = inputField.value;
   const inputFieldValue = parseFloat(inputFieldValueString);
-  return inputFieldValue;
+
+  if (inputFieldValue < 0) {
+    alert('Salary Cannot be a Negative Value');
+  } else {
+    return inputFieldValue;
+  }
 }
 
-// Get Value from Text Fields 
+// Get Value from Text Fields
 function getTextElementValueById(elementId) {
   const textElement = document.getElementById(elementId);
   const textElementValueString = textElement.innerText;
@@ -19,7 +23,7 @@ function getTextElementValueById(elementId) {
   return textElementValue;
 }
 
-// Set Value to Text Fields 
+// Set Value to Text Fields
 function setTextElementValueById(elementId, newValue) {
   const textElement = document.getElementById(elementId);
   textElement.innerText = newValue;
