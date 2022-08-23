@@ -5,6 +5,11 @@ function getInputFieldValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
   const inputFieldValueString = inputField.value;
   const inputFieldValue = parseFloat(inputFieldValueString);
+
+  if (inputFieldValue === "" || inputFieldValue != 'number') {
+    alert('Please Insert a Number');
+    return 0;
+  }
   return inputFieldValue;
 }
 
